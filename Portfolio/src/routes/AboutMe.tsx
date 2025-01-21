@@ -1,3 +1,4 @@
+// TODO: Create a component that will display information about the developer, including a brief bio and a photo.
 import React from "react";
 
 const AboutMe: React.FC = () => (

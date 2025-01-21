@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// TODO: Set up the App component with react-router-dom to display the Portfolio, AboutMe, and Resume components.
+// AboutMe should be displayed by default
+// Header and Footer components should be displayed on all pages
+// Header component should contain a navigation bar with links to the different pages of the website
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const links = [
+    { to: "/about", text: "About Me" },
+    { to: "/portfolio", text: "Portfolio" },
+    { to: "/contact", text: "Contact" },
+    { to: "/resume", text: "Resume" },
+  ];
+  const devName = "Rachel Sutton";
+  const footerLinks = {
+    github: "",
+    linkedin: "",
+    twitter: "",
+  };
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header links={links} devName={devName} />
+      <Footer links={footerLinks} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
