@@ -3,17 +3,31 @@
 // The project information should be hardcoded in an array of objects in the Portfolio component.
 // The project information should be processed with the map function to display each project.
 
-import React from "react";
+import Project from "../components/Project";
 
-const Portfolio: React.FC = () => (
-  <div>
-    <h1>Portfolio</h1>
-    <p>Here are some of the projects I've worked on:</p>
-    <ul>
-      <li>Project 1</li>
-      <li>Project 2</li>
-      <li>Project 3</li>
-    </ul>
-  </div>
-);
-export default Portfolio;
+interface PortfolioProps {
+  projects: Array<{
+    name: string;
+    image: string;
+    deployment: string;
+    github: string;
+    description: string;
+  }>;
+}
+
+export default function Portfolio(props: PortfolioProps) {
+  return (
+    <div>
+      <h1>Portfolio</h1>
+      {props.projects.map((project) => (
+        <Project
+          name={project.name}
+          image={project.image}
+          deployment={project.deployment}
+          github={project.github}
+          description={project.description}
+        />
+      ))}
+    </div>
+  );
+}

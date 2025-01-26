@@ -4,6 +4,10 @@
 // Header component should contain a navigation bar with links to the different pages of the website
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import AboutMe from "./routes/AboutMe";
+import Portfolio from "./routes/Portfolio";
+import Resume from "./routes/Resume";
+import Contact from "./routes/Contact";
 
 function App() {
   const links = [
@@ -18,10 +22,57 @@ function App() {
     linkedin: "",
     twitter: "",
   };
-
+  const projects = [
+    {
+      name: "Project 1",
+      image: "project1.jpg",
+      deployment: "https://www.example.com",
+      github: "https://www.github.com",
+      description: "This is a project I worked on.",
+    },
+    {
+      name: "Project 2",
+      image: "project2.jpg",
+      deployment: "https://www.example.com",
+      github: "https://www.github.com",
+      description: "This is another project I worked on.",
+    },
+    {
+      name: "Project 3",
+      image: "project3.jpg",
+      deployment: "https://www.example.com",
+      github: "https://www.github.com",
+      description: "This is a third project I worked on.",
+    },
+    {
+      name: "Project 4",
+      image: "project4.jpg",
+      deployment: "https://www.example.com",
+      github: "https://www.github.com",
+      description: "This is a fourth project I worked on.",
+    },
+    {
+      name: "Project 5",
+      image: "project5.jpg",
+      deployment: "https://www.example.com",
+      github: "https://www.github.com",
+      description: "This is a fifth project I worked on.",
+    },
+    {
+      name: "Project 6",
+      image: "project6.jpg",
+      deployment: "https://www.example.com",
+      github: "https://www.github.com",
+      description: "This is a sixth project I worked on.",
+    },
+  ];
   return (
     <>
       <Header links={links} devName={devName} />
+      <AboutMe />
+      <Portfolio projects={projects} />
+      <Resume />
+      <Contact />
       <Footer links={footerLinks} />
     </>
   );
