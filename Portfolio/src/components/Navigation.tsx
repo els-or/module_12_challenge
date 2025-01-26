@@ -13,7 +13,9 @@ export default function Navigation(props: NavbarProps) {
     <nav>
       <ul>
         {props.links.map((link, index) => (
-          <li key={index}>{link.text}</li>
+          <li key={index}>
+            <a href={link.to}>{link.text}</a>
+          </li>
         ))}
       </ul>
     </nav>
