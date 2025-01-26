@@ -5,3 +5,12 @@ Make sure the font size is large enough to read and that the colors don't cause 
 Consider using animations and React component libraries. Note that this will not affect your grade, but it may impact how potential employers gauge your knowledge. */
 
 @import "tailwindcss";
+
+@theme {
+    --color-primary: #b5bda5;
+    --color-primary-content: #34392a;
+    --color-primary-light: #cdd3c2;
+    --color-secondary: #a5bdb9;
+    --color-background: #f0f1ef;
+    --color-border: #e0e2dd;
+}

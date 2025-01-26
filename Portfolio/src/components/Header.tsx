@@ -14,9 +14,19 @@ interface HeaderProps {
 }
 export default function Header(props: HeaderProps) {
   return (
-    <header>
-      <h1>{props.devName}</h1>
-      <Navigation links={props.links} />
+    <header className="border-b border-border bg-primary-light">
+      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div className="flex flex-col items-start gap-4 md:flex-row md:items-center md:justify-between">
+          <div>
+            <h1 className="text-2xl font-bold text-primary-content sm:text-3xl">
+              {props.devName}
+            </h1>
+          </div>
+          <div className="flex items-center gap-4">
+            <Navigation links={props.links} />
+          </div>
+        </div>
+      </div>
     </header>
   );
 }

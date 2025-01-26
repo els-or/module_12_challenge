@@ -13,7 +13,10 @@ export default function Navigation(props: NavbarProps) {
     <nav>
       <ul>
         {props.links.map((link, index) => (
-          <li key={index}>
+          <li
+            className="inline-flex items-center justify-center border border-border bg-background px-5 py-3 text-primary-content transition hover:text-primary focus:outline-none focus:ring"
+            key={index}
+          >
             <a href={link.to}>{link.text}</a>
           </li>
         ))}
