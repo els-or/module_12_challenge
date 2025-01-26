@@ -8,10 +8,12 @@ import AboutMe from "./routes/AboutMe";
 import Portfolio from "./routes/Portfolio";
 import Resume from "./routes/Resume";
 import Contact from "./routes/Contact";
+import { BrowserRouter } from "react-router";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const links = [
-    { to: "/about", text: "About Me" },
+    { to: "/", text: "About Me" },
     { to: "/portfolio", text: "Portfolio" },
     { to: "/contact", text: "Contact" },
     { to: "/resume", text: "Resume" },
@@ -69,10 +71,17 @@ function App() {
   return (
     <>
       <Header links={links} devName={devName} />
-      <AboutMe />
-      <Portfolio projects={projects} />
-      <Resume />
-      <Contact />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AboutMe />} />
+          <Route
+            path="/portfolio"
+            element={<Portfolio projects={projects} />}
+          />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
+      </BrowserRouter>
       <Footer links={footerLinks} />
     </>
   );
