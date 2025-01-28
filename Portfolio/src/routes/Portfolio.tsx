@@ -4,6 +4,7 @@
 // The project information should be processed with the map function to display each project.
 
 import Project from "../components/Project";
+import Container from "../components/Container";
 
 interface PortfolioProps {
   projects: Array<{
@@ -17,17 +18,18 @@ interface PortfolioProps {
 
 export default function Portfolio(props: PortfolioProps) {
   return (
-    <div>
-      <h1>Portfolio</h1>
-      {props.projects.map((project) => (
-        <Project
-          name={project.name}
-          image={project.image}
-          deployment={project.deployment}
-          github={project.github}
-          description={project.description}
-        />
-      ))}
-    </div>
+    <Container header="Portfolio">
+      <div className="flex flex-wrap justify-center">
+        {props.projects.map((project) => (
+          <Project
+            name={project.name}
+            image={project.image}
+            deployment={project.deployment}
+            github={project.github}
+            description={project.description}
+          />
+        ))}
+      </div>
+    </Container>
   );
 }

@@ -9,12 +9,12 @@
 // The form should display a success message when the email is sent successfully
 
 import React from "react";
+import Container from "../components/Container";
 
 const Contact: React.FC = () => (
-  <div>
-    <h1>Contact</h1>
+  <Container header="Contact">
     <p>Feel free to reach out via email at: example@example.com</p>
-  </div>
+  </Container>
 );
 
 export default Contact;

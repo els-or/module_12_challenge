@@ -3,10 +3,10 @@
 // The Resume component should display a list of skills
 
 import React from "react";
+import Container from "../components/Container";
 
 const Resume: React.FC = () => (
-  <div>
-    <h1>Resume</h1>
+  <Container header="Resume">
     <p>
       You can download my resume{" "}
       <a href="/resume.pdf" target="_blank">
@@ -14,7 +14,7 @@ const Resume: React.FC = () => (
       </a>
       .
     </p>
-  </div>
+  </Container>
 );
 
 export default Resume;
