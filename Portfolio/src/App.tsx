@@ -18,7 +18,7 @@ function App() {
     { to: "/contact", text: "Contact" },
     { to: "/resume", text: "Resume" },
   ];
-  const devName = "Rachel Sutton";
+  const devName = "Prince Humperdinck";
   const footerLinks = {
     github: "",
     linkedin: "",
@@ -26,46 +26,58 @@ function App() {
   };
   const projects = [
     {
-      name: "Project 1",
-      image: "project1.jpg",
-      deployment: "https://www.example.com",
+      name: "Comprehensive Strategic Alliance with Florin and Guilder",
+      image:
+        "https://static.wikia.nocookie.net/princessbride/images/c/ce/Florin.png",
+      deployment: "https://princessbride.fandom.com/wiki/Florin",
       github: "https://www.github.com",
-      description: "This is a project I worked on.",
+      description:
+        "Negotiated political maneuvers to unify the kingdoms of Florin and Guilder through an elaborate marriage alliance.",
     },
     {
-      name: "Project 2",
-      image: "project2.jpg",
-      deployment: "https://www.example.com",
+      name: "Feasibility Study: Conflict Creation for Kingdom Expansion",
+      image:
+        "https://static.wikia.nocookie.net/princessbride/images/b/b7/Vizzini_planting_fabric_from_a_Gulider_army_uniform_on_Buttercup%27s_horse.png",
+      deployment: "https://princessbride.fandom.com/wiki/Guilder",
       github: "https://www.github.com",
-      description: "This is another project I worked on.",
+      description:
+        "Designed and executed an innovative strategy to incite war between Florin and Guilder as a pretext for military and economic expansion.",
     },
     {
-      name: "Project 3",
-      image: "project3.jpg",
-      deployment: "https://www.example.com",
+      name: "Wildlife Acquisition and Management Initiative",
+      image:
+        "https://vignette.wikia.nocookie.net/eef8afc5-7f3f-4b87-9597-3481621520a4/scale-to-width-down/1200",
+      deployment: "https://princessbride.fandom.com/wiki/R.O.U.S.",
       github: "https://www.github.com",
-      description: "This is a third project I worked on.",
+      description:
+        "Spearheaded the capture, breeding, and training of exotic animals, including the legendary Rodents of Unusual Size (ROUS).",
     },
     {
-      name: "Project 4",
-      image: "project4.jpg",
-      deployment: "https://www.example.com",
+      name: "The Pit of Despair Development Program",
+      image:
+        "https://static.wikia.nocookie.net/princessbride/images/e/e6/Pit_of_Despair.png",
+      deployment: "https://princessbride.fandom.com/wiki/Pit_of_Despair",
       github: "https://www.github.com",
-      description: "This is a fourth project I worked on.",
+      description:
+        "Oversaw the design and construction of a state-of-the-art interrogation and research facility.",
     },
     {
-      name: "Project 5",
-      image: "project5.jpg",
-      deployment: "https://www.example.com",
+      name: "Public Relations and Image Management",
+      image:
+        "https://static.wikia.nocookie.net/princessbride/images/c/c3/Humperdinck_%28film%29.jpg",
+      deployment: "https://princessbride.fandom.com/wiki/Humperdinck",
       github: "https://www.github.com",
-      description: "This is a fifth project I worked on.",
+      description:
+        "Maintained the image of a noble and eligible ruler while discreetly executing covert operations.",
     },
     {
-      name: "Project 6",
-      image: "project6.jpg",
-      deployment: "https://www.example.com",
+      name: "Specialized Military Training Program: Florin’s Elite Forces",
+      image:
+        "https://static.wikia.nocookie.net/princessbride/images/c/c2/Vizzini_%28film%29.jpg",
+      deployment: "https://princessbride.fandom.com/wiki/Vizzini",
       github: "https://www.github.com",
-      description: "This is a sixth project I worked on.",
+      description:
+        "Led the recruitment and development of specialized combat units skilled in unconventional warfare.",
     },
   ];
   return (

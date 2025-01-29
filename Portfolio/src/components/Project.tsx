@@ -3,6 +3,9 @@
 // The title of the project
 // A link to the deployed application
 // A link to the corresponding GitHub repository
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 
 interface ProjectProps {
   name: string;
@@ -18,14 +21,18 @@ export default function Project(props: ProjectProps) {
       <h3 className="text-l font-semibold text-primary-content sm:text-xl">
         {props.name}
       </h3>
-      <img src={props.image} alt={props.name} />
-      <p>{props.description}</p>
-      <a href={props.deployment} target="_blank">
-        Deployment
-      </a>
-      <a href={props.github} target="_blank">
-        GitHub
-      </a>
+      <div className="p-2">
+        <img className="rounded-lg" src={props.image} alt={props.name} />
+      </div>
+      <p className="p-2">{props.description}</p>
+      <div className="p-2 flex justify-between">
+        <a href={props.deployment} target="_blank">
+          <FontAwesomeIcon icon={faExternalLink} /> Deployed App
+        </a>
+        <a href={props.github} target="_blank">
+          <FontAwesomeIcon icon={faGithub} /> GitHub
+        </a>
+      </div>
     </div>
   );
 }
