@@ -8,11 +8,16 @@ import Container from "../components/Container";
 const Resume: React.FC = () => (
   <Container header="Resume">
     <p>
-      You can download my resume{" "}
-      <a href="/resume.pdf" target="_blank">
-        here
+      If you wish to fully grasp the extent of my brilliance and undeniable
+      qualifications,{" "}
+      <a
+        className="text-primary-content underline"
+        href="/HumperdinckResume.pdf"
+        target="_blank"
+      >
+        download my resume immediately
       </a>
-      .
+      —and consider yourself privileged to do so.
     </p>
   </Container>
 );

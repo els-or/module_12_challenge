@@ -27,12 +27,12 @@ export default function Footer(props: footerProps) {
             </a>
           </div>
           <div>
-            <a href={props.links.github}>
+            <a href={props.links.linkedin}>
               <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
             </a>
           </div>
           <div>
-            <a href={props.links.github}>
+            <a href={props.links.twitter}>
               <FontAwesomeIcon icon={faTwitter} /> Twitter
             </a>
           </div>

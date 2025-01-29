@@ -13,7 +13,18 @@ import Container from "../components/Container";
 
 const Contact: React.FC = () => (
   <Container header="Contact">
-    <p>Feel free to reach out via email at: example@example.com</p>
+    <p>
+      If you possess matters of great importance—or simply wish to bask in the
+      glory of my wisdom—you may send your inquiries to{" "}
+      <a
+        href="mailto:RoyalDecrees@FlorinCastle.gov"
+        className="text-primary-content underline"
+      >
+        RoyalDecrees@FlorinCastle.gov
+      </a>
+      .
+    </p>
+    <p>Do not waste my time.</p>
   </Container>
 );
 

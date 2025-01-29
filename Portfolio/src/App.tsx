@@ -20,9 +20,9 @@ function App() {
   ];
   const devName = "Prince Humperdinck";
   const footerLinks = {
-    github: "",
-    linkedin: "",
-    twitter: "",
+    github: "https://github.com/HumperdinckTheGreat",
+    linkedin: "https://www.linkedin.com/in/PrinceHumperdinck",
+    twitter: "https://twitter.com/SupremeRulerFlorin",
   };
   const projects = [
     {
