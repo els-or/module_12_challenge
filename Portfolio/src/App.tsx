@@ -82,8 +82,8 @@ function App() {
   ];
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <Header links={links} devName={devName} />
       <BrowserRouter>
+        <Header links={links} devName={devName} />
         <Routes>
           <Route path="/" element={<AboutMe />} />
           <Route
@@ -93,8 +93,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
+        <Footer links={footerLinks} />
       </BrowserRouter>
-      <Footer links={footerLinks} />
     </div>
   );
 }
