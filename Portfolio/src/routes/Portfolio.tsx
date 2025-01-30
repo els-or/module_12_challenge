@@ -20,8 +20,9 @@ export default function Portfolio(props: PortfolioProps) {
   return (
     <Container header="Portfolio">
       <div className="flex flex-wrap justify-center">
-        {props.projects.map((project) => (
+        {props.projects.map((project, index) => (
           <Project
+            key={index}
             name={project.name}
             image={project.image}
             deployment={project.deployment}
