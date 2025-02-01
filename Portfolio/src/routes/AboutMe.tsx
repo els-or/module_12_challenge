@@ -4,8 +4,9 @@ import Container from "../components/Container";
 
 const AboutMe: React.FC = () => (
   <Container header="About Me">
-    <div className="flex flex-row items-center gap-4">
+    <div className="flex flex-col md:flex-row items-center gap-4">
       <img
+        className="rounded-lg"
         src="https://static.wikia.nocookie.net/princessbride/images/c/c3/Humperdinck_%28film%29.jpg"
         alt="Prince Humperdinck"
       ></img>

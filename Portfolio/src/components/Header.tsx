@@ -22,7 +22,7 @@ export default function Header(props: HeaderProps) {
               {props.devName}
             </h1>
           </div>
-          <div className="flex items-center gap-4">
+          <div>
             <Navigation links={props.links} />
           </div>
         </div>

@@ -13,10 +13,10 @@ interface NavbarProps {
 export default function Navigation(props: NavbarProps) {
   const location = useLocation().pathname;
   const navStyle =
-    "inline-flex items-center justify-center border border-border bg-background px-5 py-3 text-primary-content transition hover:text-primary focus:outline-none focus:ring";
+    "w-30 inline-flex items-center justify-center border border-border bg-background px-5 py-3 text-primary-content transition hover:text-primary focus:outline-none focus:ring";
   return (
     <nav>
-      <ul>
+      <ul className="flex md:flex-row flex-col items-center gap-4">
         {props.links.map((link, index) => (
           <li
             className={navStyle + (location === link.to ? " bg-primary" : "")}
